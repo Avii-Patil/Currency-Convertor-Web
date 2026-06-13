@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div class="card">
+    <h1>&#8646; Currency Converter</h1>
+    <p class="subtitle">Live rates via exchangerate-api.com</p>
+
+    <label>Amount & from currency</label>
+    <div class="input-row">
+      <input type="number" id="amount" value="1" min="0" step="any" placeholder="0" />
+      <select id="from-cur"></select>
+    </div>
+
+    <button class="swap-btn" id="swap-btn" title="Swap currencies">&#8645;</button>
+
+    <label>To currency</label>
+    <div class="input-row">
+      <select id="to-cur" style="flex:1;"></select>
+    </div>
+
+    <div class="result-box" id="result-box">
+      <div>
+        <div class="result-amount" id="result-amount"></div>
+        <div class="result-label" id="result-label"></div>
+      </div>
+      <span>&#10003;</span>
+    </div>
+    <div class="rate-line" id="rate-line"></div>
+
+    <button class="convert-btn" id="convert-btn">Convert</button>
+    <div class="error" id="error-msg"></div>
+  </div>
+  <script src="script.js"></script>
+
+  
+</body>
+</html>
