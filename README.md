@@ -70,13 +70,6 @@ Fetch latest exchange rates dynamically.
 
 ---
 
-## 📷 Preview
-
-Add project screenshots here:
-
-```html
-<img src="images/project-preview.png" width="100%">
-```
 
 ---
 
